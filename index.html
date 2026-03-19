@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Ares Online | En Vivo</title>
+    <style>
+        body {
+            background: radial-gradient(circle, #1a1a2e 0%, #0f0f1b 100%);
+            color: white;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2.5rem;
+            border-radius: 30px;
+            text-align: center;
+            width: 90%;
+            max-width: 380px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.6);
+        }
+        .logo-oficial {
+            width: 180px;
+            height: auto;
+            margin-bottom: 1.5rem;
+            filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.3));
+        }
+        h1 { 
+            font-size: 2rem;
+            margin: 0;
+            color: #00d4ff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .subtitle { color: #888; margin-bottom: 2rem; font-size: 0.8rem; letter-spacing: 1px; }
+        
+        .player-box {
+            background: #000;
+            padding: 12px;
+            border-radius: 50px;
+            margin-bottom: 1.5rem;
+            border: 1px solid #333;
+        }
+        audio { width: 100%; height: 40px; filter: invert(100%) hue-rotate(180deg); }
+
+        .live-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(45deg, #ff004c, #ff6b00);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.8rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 0, 76, 0.4); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 12px rgba(255, 0, 76, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 0, 76, 0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="LOGO_PNG.png" alt="Radio Ares Logo" class="logo-oficial">
+        
+        <h1>RADIO ARES</h1>
+        <div class="subtitle">ESTACIÓN ONLINE</div>
+        
+        <div class="player-box">
+            <audio controls autoplay>
+                <source src="https://stream-174.zeno.fm/laazclydfopvv" type="audio/mpeg">
+                Tu navegador no soporta el audio.
+            </audio>
+        </div>
+
+        <div class="live-tag">
+            <span style="height: 10px; width: 10px; background: white; border-radius: 50%;"></span>
+            AL AIRE
+        </div>
+    </div>
+
+</body>
+</html>
